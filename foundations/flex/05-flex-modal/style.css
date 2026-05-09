@@ -15,6 +15,26 @@ body {
   justify-content: center;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 16px 16px 16px 64px;
+  gap: 16px;
+}
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  
+}
+.warn {
+  order: 1;
+  padding-top: 10px;
+  margin-left: 9px;
+  flex-shrink: 0;
+}
 .modal {
   background: white;
   width: 480px;
@@ -33,6 +53,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  order: 0;
+  margin-left: -50px;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,6 +71,9 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  order: 1;
+  margin-left: 78px;
+  flex-shrink: 0;
 }
 
 button {
